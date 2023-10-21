@@ -39,39 +39,37 @@ export default function Contato() {
             
         </div>
 
-        
-                <div >
-                    <input className='estado' type="text" name="estado" placeholder="Estado"
-                    { ... register("estado", { required: true })} />
-                { errors.estado && <div  className={styles.erro}> O estado é obrigatório!</div>}
-                </div>
+<div className='telas-conteudo'>
+    
+  <div className='telas'> 
+        <div >
+            <input className='estado' type="text" name="estado" placeholder="Estado"
+            { ... register("estado", { required: true })} />
+        { errors.estado && <div  className={styles.erro}> O estado é obrigatório!</div>}
+        </div>
+
+        <div >
+            <input className=' cidade' type="text" name="cidade" placeholder="Cidade"
+                { ... register("cidade", { required: true })} />
+                { errors.cidade && <div  className={styles.erro}> A cidade é obrigatório!</div>}
+        </div>
+  </div>
+              
+    <div className='telas' >
+        <div>
+            <input className='telefone' type="tel" name="telefone" placeholder="Telefone" 
+            { ... register("telefone", { required: true })} />
+            { errors.telefone && <div  className={styles.erro}> O telefone é obrigatório!</div>}
+        </div>
 
 
-
-
-                <div >
-                    <input className=' cidade' type="text" name="cidade" placeholder="Cidade"
-                     { ... register("cidade", { required: true })} />
-                     { errors.cidade && <div  className={styles.erro}> A cidade é obrigatório!</div>}
-                </div>
-
-
-
-                <div className='telas' >
-                <div>
-                <input className='telefone' type="tel" name="telefone" placeholder="Telefone" 
-                 { ... register("telefone", { required: true })} />
-                 { errors.telefone && <div  className={styles.erro}> O telefone é obrigatório!</div>}
-                </div>
-
-
-                <div>
-                <textarea className='assunto' name="assunto" placeholder="Assunto" 
-                 { ... register("assunto", { required: true })} />
-                 { errors.assunto && <div  className={styles.erro}> O assunto é obrigatório!</div>}
-                </div>
-
-                </div>
+        <div>
+            <textarea className='assunto' name="assunto" placeholder="Assunto" 
+            { ... register("assunto", { required: true })} />
+            { errors.assunto && <div  className={styles.erro}> O assunto é obrigatório!</div>}
+        </div>
+    </div>
+</div>
 
                     <textarea className='mensagem' name="mensagem" placeholder="Mensagem"
                      { ... register("mensagem", { required: true })} />
