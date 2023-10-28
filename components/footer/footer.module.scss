@@ -1,43 +1,69 @@
-/* footer.module.scss */
-
-.footer {
-    background-color: #fff;
-    color: #0068A0;
-    padding: 20px 0;
-  }
-  
-  .footerContent {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .footerLogo img {
-    width: 100px; /* Tamanho do logo */
-  }
-  
-  .footerInfo p {
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;700&display=swap');
+.principal {
+    font-family: 'Encode Sans', sans-serif;
+    color: #2FC8AC;
+    width: 100%;
     margin: 0;
-    padding: 5px;
-    font-size: 14px;
-    font-bold: true;
-  }
-  
-  .footerSocial a {
-    margin-right: 10px;
-    text-decoration: none;
-  }
-  
-  .footerSocial img {
-    width: 30px; /* Tamanho dos ícones de redes sociais */
-    height: 30px;
-  }
-  
-  .footerRights {
-    text-align: center;
-    align-content: baseline;
-    padding-top: 10px;
-  }
-  
+    padding: 0;
+    background-color: #1B7E6C;
+    a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+}
+
+.sobre-nos {
+    display: block;
+    float: left;
+    width: 30%;
+    margin: 4% 1% 0% 2%;
+    h4 {
+        padding-left: 20%;
+        margin: 1% 0% 1% 0%;
+    }
+    a {
+        padding-left: 20%;
+    }
+}
+
+.redes-sociais {
+    display: block;
+    float: left;
+    width: 30%;
+    margin: 4% 1% 0% 2%;
+    h4 {
+        padding-left: 3%;
+        margin: 1%;
+    }
+    img {
+        width: 30px;
+        display: inline-block;
+        margin: 3% 3%;
+    }
+}
+
+.programas {
+    display: block;
+    float: left;
+    width: 30%;
+    margin: 4% 1% 0% 2%;
+    h4 {
+        margin: 1%;
+    }
+    a {
+        position: relative;
+        padding-left: 1%;
+    }
+}
+
+.ultima {
+    h5 {
+        float: right;
+        margin: 5.5% 34% 0% 0%;
+    }
+    img {
+        width: 10%;
+        margin: 4% 0% 0% 23%;
+    }
+}

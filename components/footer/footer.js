@@ -2,47 +2,33 @@
   import React from "react";
 import styles from "./footer.module.scss"; // Certifique-se de criar o arquivo CSS/SCSS correspondente e importá-lo aqui
 
-export default function Footer() {
-  return (
-    <footer className={styles.footer}>
-      <div className={styles.footerContent}>
-        <div className={styles.footerLogo}>
-          <img src="https://www.institutoalgar.org.br/wp-content/uploads/2022/08/algar-logo.svg" alt="Logo" />
+export default function Navbar() {
+    return <> 
+        <div className={styles['principal']}>
+          <section className={styles['sobre-nos']}>
+            <h4>Sobre nós</h4>
+            <a href='https://www.institutoalgar.org.br/sobre-o-instituto/' target='_blank'>Nossa História</a>
+          </section>
+          <section className={styles['redes-sociais']}>
+            <h4>Nossa Redes</h4>
+            <div className={styles['links']}>
+              <a href='https://www.facebook.com/institutoalgar' target='_blank'><img src='./imgs/Icones/facebook.png' /></a>
+              <a href='https://www.instagram.com/institutoalgar/' target='_blank'><img src='./imgs/Icones/instagram.png' /></a>
+              <a href='https://www.linkedin.com/company/instituto-algar/' target='_blank'><img src='./imgs/Icones/linkedin.png' /></a>
+              <a href='https://www.youtube.com/@InstitutoAlgar' ><img src='./imgs/Icones/youtube.png' /></a>
+                          </div>
+          </section>
+          <section className={styles['programas']}>
+            <h4>Programas</h4>
+            <a href='https://www.institutoalgar.org.br/programas-sociais/programa-transforma/' target='_blank'>Transforma</a><br/>
+            <a href='https://www.institutoalgar.org.br/programas-sociais/programa-de-voluntariado/' target='_blank'>Voluntários</a><br/>
+            <a href='https://www.institutoalgar.org.br/programas-sociais/programa-talentos-de-futuro/' target='_blank'>Talentos do Futuro</a><br/>
+            <a href='https://www.institutoalgar.org.br/programas-sociais/programa-educador-do-amanha/' target='_blank'>Educador do amanhã</a><br/>
+          </section>
+          <section className={styles['ultima']}>
+            <img src='./imgs/Icones/Instituto-Algar-1-removebg-preview.png'alt='logo algar'/>
+            <h5>Copyright © 2023 | Instituto Algar - Todos os direitos reservados.</h5>
+          </section>
         </div>
-        <div className={styles.footerInfo}>
-          <p>Instituto Algar</p>
-          <p>Programas</p>
-          <div className="contact flex flex-col">
-        <p class={styles.footerInfo}>
-          Fale conosco        </p>
-          <p className={styles.footerInfo} >
-                    Tel 1: (34) 99670-5729 <br></br>
-                    Tel 2: (34) 3218-3061 <br></br>
-                    Email: contato@institutoalgar.org.br <br></br>
-                    End: Rua Lapa do Lobo, 800 <br></br>
-                    Bairro Granja Marileusa <br></br>
-                    Cep: 38406-644Uberlândia-MG
-                </p>
-        </div>
-        <div className={styles.footerSocial}>
-          <a href="link-para-facebook">
-            <img src="https://www.institutoalgar.org.br/wp-content/uploads/2022/08/icon-social-facebook.svg" alt="Facebook" />
-          </a>
-          <a href="link-para-linkedin">
-            <img src="https://www.institutoalgar.org.br/wp-content/uploads/2022/08/Group-4360.svg" alt="LinkedIn" />
-          </a>
-          <a href="link-para-instagram">
-            <img src="https://www.institutoalgar.org.br/wp-content/uploads/2022/08/icon-instagram.svg" alt="Instagram" />
-          </a>
-          <a href="link-para-youtube">
-            <img src="https://www.institutoalgar.org.br/wp-content/uploads/2022/08/icon-youtube.svg" alt="YouTube" />
-          </a>
-        </div>
-      </div>
-      <div className={styles.footerRights}>
-        <p>&copy; {new Date().getFullYear()} Todos os direitos reservados.</p>
-      </div>
-      </div>
-    </footer>
-  );
-}   
+    </>
+  }

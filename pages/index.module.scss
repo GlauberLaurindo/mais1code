@@ -1,1 +1,47 @@
 /* CSS do componente index Home */
+
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;700&display=swap');
+.principal {
+    background-color: #d9d9d9;
+    width: 100%;
+    padding-bottom: 10px;
+    .corpo {
+        width: 80%;
+        margin: 0 auto;
+        color: #1B7E6C;
+        font-family: 'Encode Sans', sans-serif;
+        .ads img {
+            position: relative;
+            left: 50px;
+            width: 90%;
+            border-radius: 20px;
+            margin-top: 20px;
+        }
+        .ads input {
+            position: relative;
+            top: -25px;
+            left: -880px;
+            background-color: #19A053;
+            padding: 15px;
+            border-radius: 10px;
+            color: #fff;
+            font-weight: bolder;
+        }
+        .welcome,
+        .depoimentos {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 20px 0px;
+        }
+        .depoimento img {
+            width: 100px;
+            border-radius: 10px;
+            float: left;
+            margin-right: 10px;
+        }
+        .depoimento h3 p {
+            text-align: justify;
+        }
+    }
+}

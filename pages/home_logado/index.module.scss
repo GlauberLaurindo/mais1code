@@ -1,27 +1,43 @@
 /* CSS do componente da página Contato */
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;700&display=swap');
 
-.criar-publicacao {
+.corpo {
+    color: #1B7E6C;
+    font-family: 'Encode Sans', sans-serif;
+}
+
+.criarPublicacao {
     padding: 10px 0 10px 0;
-    margin: 0 auto;
+    margin: 20px auto;
     width: 734px;
-    height: 50px;
+    height: 100px;
     background-color: #fff;
     border-radius: 20px;
     align-items: center;
-    box-shadow: 5px 5px 5px #868686;
+    border: 1px solid #868686;
+    box-shadow: 1px 1px 1px #868686;
 }
 
-.foto-perfil {
+.fotoPerfil {
     width: 44px;
     float: left;
-    margin-left: 10px;
+    margin: 0 10px 0 10px;
 }
 
 .publicacao {
-    padding: 15px 170px;
+    background: transparent;
+    padding: 15px 10px 15px 10px;
     text-align: left;
     float: left;
     margin-left: 10px;
+    border-radius: 10px;
+}
+
+.botaoPostar {
+    position: relative;
+    top: 10px;
+    right: 605px;
+    padding: 10px 20px;
     border-radius: 10px;
 }
 
@@ -43,32 +59,33 @@
 
 .post {
     width: 734px;
-    margin: 0 auto;
+    margin: 20px auto;
     background-color: #fff;
     margin-top: 80px;
     padding: 20px;
     border-radius: 20px;
-    box-shadow: 5px 5px 5px #868686;
-    height: 450px;
+    border: 1px solid #868686;
+    box-shadow: 1px 1px 1px #868686;
+    height: 460px;
     font-family: 'Encode Sans', sans-serif;
 }
 
-.foto-post {
+.fotoPost {
     position: relative;
     left: 135px;
 }
 
-.foto-post2 {
+.fotoPost2 {
     position: relative;
     left: 120px;
     width: 500px;
 }
 
-.texto-post {
-    padding: 0 20px 0;
+.textoPost {
+    padding: 0 20px 0 20px;
 }
 
-.hora-post {
+.horaPost {
     margin-top: 0;
 }
 
@@ -77,6 +94,10 @@
     width: 34px;
     float: left;
     margin-left: 10px;
+}
+
+.formComentario{
+    padding: 20px;
 }
 
 .comentario {

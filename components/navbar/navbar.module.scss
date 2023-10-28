@@ -1,45 +1,156 @@
-/* navbar.module.scss */
+.home img {
+    height: 50px;
+    margin: 2px 20px;
+    background: none;
+    border: none;
+    color: #fff;
+}
 
-/* Estilo básico para a barra de navegação */
-.navbar {
-    background-color: #fff; /* Cor de fundo */
-    color: #fff; /* Cor do texto */
-    padding: 10px; /* Espaçamento interno */
-  }
-  
-  /* Estilo para links de navegação */
-  .navbar a {
-    text-decoration: none; /* Remova a sublinhado padrão dos links */
-    color: #4ee24e; /* Cor do texto dos links */
-    margin-right: 20px; /* Espaçamento entre os links */
-    font-weight: bold; /* Estilo de fonte para os links */
-  }
-  
-  /* Estilo para os links quando hover */
-  .navbar a:hover {
-    color: #ff5722; /* Cor quando o mouse passa sobre o link */
-  }
-  
-  /* Estilo para o logotipo da navbar */
-  .navbar-logo {
-    font-size: 24px; /* Tamanho da fonte do logotipo */
-    font-weight: bold; /* Estilo de fonte do logotipo */
-  }
-  
-  /* Estilo para o botão de ação (se houver) */
-  .navbar-button {
-    background-color: #ff5722; /* Cor de fundo do botão */
-    color: #fff; /* Cor do texto do botão */
-    padding: 10px 20px; /* Espaçamento interno do botão */
-    border: none; /* Remova a borda do botão */
-    cursor: pointer; /* Cursor ao passar o mouse */
-    border-radius: 5px; /* Borda arredondada do botão */
-  }
-  
-  /* Estilo para o botão de ação quando hover */
-  .navbar-button:hover {
-    background-color: #ff7f4d; /* Cor de fundo ao passar o mouse */
-  }
-  
-  /* Outros estilos específicos conforme necessário */
-  
+.nav {
+    background: #1B7E6C;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pesquisa {
+    position: absolute;
+    left: 8%;
+}
+
+.barra_pesquisa {
+    background-color: #EAFDF7;
+    border-radius: 20px;
+    height: 35px;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.barra_texto {
+    background: none;
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 400px;
+    padding: 0;
+    line-height: 30px;
+    margin-left: 10px;
+}
+
+.botao_pesquisa img {
+    display: flex;
+    padding-right: 10px;
+    width: 30px
+}
+
+.botao_pesquisa:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    font-family: 'Encode Sans';
+    font-size: large;
+    font-weight: 900;
+    padding-right: 20px;
+    text-decoration: none;
+}
+
+.li .botao_nav {
+    text-decoration: none;
+    color: #fff;
+}
+
+.li:not(:last-child) {
+    padding-right: 20px;
+}
+
+.li:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 880px) {
+    .header {
+        position: relative;
+        width: 100%;
+    }
+    .home img {
+        height: 50px;
+        margin: 2px 10px;
+        background: none;
+        border: none;
+        color: #fff;
+    }
+    .nav {
+        background: #1B7E6C;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .pesquisa {
+        position: absolute;
+        left: 18%;
+    }
+    .barra_pesquisa {
+        background-color: #EAFDF7;
+        border-radius: 20px;
+        height: 35px;
+        width: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .barra_texto {
+        background: none;
+        border: none;
+        outline: none;
+        height: 30px;
+        width: 55px;
+        padding: 0;
+        line-height: 30px;
+        margin-left: 10px;
+    }
+    .botao_pesquisa img {
+        display: flex;
+        padding-right: 10px;
+        width: 30px
+    }
+    .botao_pesquisa:hover {
+        cursor: pointer;
+        opacity: 0.8;
+    }
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    font-family: 'Encode Sans';
+    font-size: large;
+    font-weight: 900;
+    padding: 0px 10px 0px 0px;
+}
+
+.li .botao_nav {
+    text-decoration: none;
+    color: #fff;
+}
+
+.li:not(:last-child) {
+    padding-right: 10px;
+}
+
+.li:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
